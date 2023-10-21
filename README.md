@@ -25,5 +25,23 @@ To set the stage for our facial recognition adventure, install the required libr
 
 ```bash
 pip install opencv-python face_recognition numpy
+```
+## How It Works
+- Video Capture: The script captures video from your default camera, creating a live feed.
+- Face Encoding: We preload images of known individuals (Barack Obama and Joe Biden in this example) and encode their facial features.
+- Real-Time Recognition: As the video plays, the script detects faces in each frame and attempts to match them with the pre-encoded faces.
+- Annotations: Recognized faces are highlighted with bounding boxes, and their names are displayed on the screen.
+Interactive Exit: Press 'q' on your keyboard at any time to gracefully exit the application.
 
-## Installation
+## Dependencies
+- OpenCV: For video capture and rendering.
+- face_recognition: For efficient and accurate face detection and recognition.
+- numpy: For numerical computations and data handling.
+
+## Acknowledgements
+This project stands on the shoulders of giants, utilizing the face_recognition library, which is built atop dlib, a modern toolkit containing a plethora of machine learning algorithms.
+
+## Support and Contribution
+Feel inspired? Have questions? Open an issue or submit a pull request. Your journey through the realms of computer vision and machine learning starts here!
+
+
